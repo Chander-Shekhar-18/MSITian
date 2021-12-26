@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_eBook"
+        android:icon="@drawable/ic_ebook"
+        android:title="E Books" />
+
+    <item
+        android:id="@+id/navigation_theme"
+        android:icon="@drawable/ic_fee"
+        android:title="Fees" />
+
+    <item
+        android:id="@+id/navigation_placement"
+        android:icon="@drawable/ic_placement"
+        android:title="Placements" />
+
+   <item
+        android:id="@+id/navigation_recruiter"
+        android:icon="@drawable/recruitment"
+        android:title="Recruiters" />
+
+
+    <item
+        android:id="@+id/navigation_website"
+        android:icon="@drawable/ic_website"
+        android:title="Website" />
+
+
+    <item
+        android:id="@+id/navigation_rate"
+        android:icon="@drawable/ic_rate"
+        android:title="Rate Us" />
+
+    <item
+        android:id="@+id/navigation_developer"
+        android:icon="@drawable/ic_developers"
+        android:title="Developer" />
+
+</menu>

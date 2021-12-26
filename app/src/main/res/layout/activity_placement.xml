@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ebook.PlacementActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/placementToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/toolbar_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/btnBackPlacement"
+                android:src="@drawable/ic_back"
+                />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placements"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/btnBackPlacement"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                />
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/placementRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placementToolbar"
+        tools:listitem="@layout/ebook_item_layout" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container_placement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placementToolbar">
+
+        <LinearLayout
+            android:id="@+id/shimmerLayoutPlacement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+
+            <include layout="@layout/shimmer_effect" />
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

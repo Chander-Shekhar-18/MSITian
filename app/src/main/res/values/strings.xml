@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MSITian</string>
+
+    <string name="bold" tools:ignore="ReferenceType">@font/latobold</string>
+    <string name="light" tools:ignore="ReferenceType">@font/latolight</string>
+    <string name="regular" tools:ignore="ReferenceType">@font/latoregular</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">Open navigation drawer</string>
+    <string name="close">Close navigation drawer</string>
+    <string name="order">Home</string>
+    <string name="notice">Notice</string>
+    <string name="faculty">Faculty</string>
+    <string name="gallery">Gallery</string>
+    <string name="about">About</string>
+    <string name="maharaja_surajmal_institute_of_technology">Maharaja Surajmal Institute of Technology</string>
+    <string name="about_college">This AICTE approved Institute under GGSIP University is ideally located in the Institutional area of  Janakpuri, New Delhi. It has a campus spread over eight acres of land with beautiful eco-friendly surroundings. Institute was earlier operating from four storey building of 6279 sq.m of built up area. Recently it has been shifted to a more spacious seven storeyed building with built up area of 9660 sq.m The institute has over a short span of time acquired and developed impressive infrastructure, expertise and resources for imparting high quality engineering education. The institute runs in two shifts - First/Morning shift and Second/Evening shift providing Bachelor of Technology in CSE, IT, ECE and EEE streams.</string>
+
+
+    <string-array name="theme">
+        <item>System Default</item>
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
