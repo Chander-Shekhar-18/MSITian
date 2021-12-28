@@ -30,9 +30,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtViewFeeTitle"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:layout_gravity="center_vertical"
                 android:textColor="@color/black"
+                android:fontFamily="@font/regular"
                 android:layout_marginStart="3dp"
                 android:textStyle="bold"
                 />
@@ -54,11 +55,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:fontFamily="@font/latobold"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
+            android:fontFamily="@font/bold"
             android:text="Fees Structure"
             android:textColor="@color/textColor"
             android:textSize="22sp" />
@@ -88,8 +89,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:fontFamily="@font/latoregular"
                 android:layout_weight="1"
+                android:fontFamily="@font/regular"
                 android:text="1st Year"
                 android:textColor="@color/textColor"
                 android:textSize="16sp" />
@@ -99,8 +100,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/regular"
                 android:text="₹1.35 LAKHS"
-                android:fontFamily="@font/latoregular"
                 android:textColor="@color/textColor"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -121,7 +122,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/view2"
-            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
             android:orientation="horizontal"
             android:weightSum="2">
 
@@ -130,8 +134,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/regular"
                 android:text="2nd Year"
-                android:fontFamily="@font/latoregular"
                 android:textColor="@color/textColor"
                 android:textSize="16sp" />
 
@@ -140,7 +144,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/latoregular"
+                android:fontFamily="@font/regular"
                 android:text="₹1.30 LAKHS"
                 android:textColor="@color/textColor"
                 android:textSize="16sp" />
@@ -172,7 +176,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/latoregular"
+                android:fontFamily="@font/regular"
                 android:text="3rd Year"
                 android:textColor="@color/textColor"
                 android:textSize="16sp" />
@@ -182,7 +186,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/latoregular"
+                android:fontFamily="@font/regular"
                 android:text="₹1.30 LAKHS"
                 android:textColor="@color/textColor"
                 android:textSize="16sp" />
@@ -213,7 +217,7 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:text="4th Year"
-                android:fontFamily="@font/latoregular"
+                android:fontFamily="@font/regular"
                 android:textColor="@color/textColor"
                 android:textSize="16sp" />
 
@@ -221,7 +225,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:fontFamily="@font/latoregular"
+                android:fontFamily="@font/regular"
                 android:layout_weight="1"
                 android:text="₹1.30 LAKHS"
                 android:textColor="@color/textColor"
@@ -242,16 +246,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/view5"
-            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
             android:orientation="horizontal"
             android:weightSum="2">
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/latoregular"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/bold"
                 android:text="Total Fees"
                 android:textColor="@color/textColor"
                 android:textSize="16sp" />
@@ -261,7 +268,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/latoregular"
+                android:fontFamily="@font/bold"
                 android:text="₹5.26 LAKHS"
                 android:textColor="@color/textColor"
                 android:textSize="16sp" />

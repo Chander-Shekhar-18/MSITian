@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,7 +26,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/text_margin"
-                    android:fontFamily="@string/bold"
+                    android:fontFamily="@font/bold"
                     android:text="Convocation"
                     android:textColor="@color/textColor"
                     android:textSize="@dimen/title_size2" />
@@ -61,7 +61,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/text_margin"
-                    android:fontFamily="@string/bold"
+                    android:fontFamily="@font/bold"
                     android:text="Independence Day"
                     android:textColor="@color/textColor"
                     android:textSize="@dimen/title_size2" />
@@ -96,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/text_margin"
-                    android:fontFamily="@string/bold"
+                    android:fontFamily="@font/bold"
                     android:text="Other Events"
                     android:textColor="@color/textColor"
                     android:textSize="@dimen/title_size2" />
@@ -118,4 +118,4 @@
 
     </LinearLayout>
 
-</androidx.core.widget.NestedScrollView>
+</ScrollView>

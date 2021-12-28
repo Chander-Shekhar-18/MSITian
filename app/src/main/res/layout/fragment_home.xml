@@ -46,10 +46,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@string/bold"
+                android:fontFamily="@font/bold"
                 android:text="@string/maharaja_surajmal_institute_of_technology"
                 android:textColor="@color/textColor"
-                android:textSize="@dimen/title_size2" />
+                android:textSize="18sp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
@@ -192,7 +192,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:fontFamily="@string/bold"
+                        android:fontFamily="@font/bold"
                         android:text="Departments"
                         android:textColor="@color/white"
                         android:textSize="@dimen/title_size2" />
@@ -291,7 +291,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@string/bold"
+                android:fontFamily="@font/bold"
                 android:text="About Courses"
                 android:textColor="@color/textColor"
                 android:textSize="@dimen/title_size2" />
@@ -335,7 +335,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@string/bold"
+                android:fontFamily="@font/bold"
                 android:text="Contact Details"
                 android:textColor="@color/textColor"
                 android:textSize="@dimen/title_size2" />

@@ -33,8 +33,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="3dp"
+                android:fontFamily="@font/regular"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -61,8 +62,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
-                android:fontFamily="@font/latoregular"
                 android:text="Amazon"
                 android:textColor="@color/textColor"
                 android:textSize="20sp" />
@@ -78,8 +79,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
-                android:fontFamily="@font/latoregular"
                 android:text="ACCENTURE"
                 android:textColor="@color/textColor"
                 android:textSize="18sp" />
@@ -95,9 +96,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="ADOBE"
-                android:fontFamily="@font/latoregular"
                 android:textColor="@color/textColor"
                 android:textSize="18sp" />
 
@@ -112,8 +113,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
-                android:fontFamily="@font/latoregular"
                 android:text="TCS"
                 android:textColor="@color/textColor"
                 android:textSize="18sp" />
@@ -128,8 +129,8 @@
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/latoregular"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="COGNIZANT"
                 android:textColor="@color/textColor"
@@ -147,9 +148,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="Google"
-                android:fontFamily="@font/latoregular"
                 android:textColor="@color/textColor"
                 android:textSize="18sp" />
 
@@ -165,8 +166,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
-                android:fontFamily="@font/latoregular"
                 android:text="Infosys"
                 android:textColor="@color/textColor"
                 android:textSize="18sp" />
@@ -183,9 +184,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="ZS"
-                android:fontFamily="@font/latoregular"
                 android:textColor="@color/textColor"
                 android:textSize="18sp" />
 
@@ -201,9 +202,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="IHS Markit"
-                android:fontFamily="@font/latoregular"
                 android:textColor="@color/textColor"
                 android:textSize="18sp" />
 
@@ -219,10 +220,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="Mahindra Comviva"
                 android:textColor="@color/textColor"
-                android:fontFamily="@font/latoregular"
                 android:textSize="18sp" />
 
             <View
@@ -237,9 +238,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="Microsoft"
-                android:fontFamily="@font/latoregular"
                 android:textColor="@color/textColor"
                 android:textSize="18sp" />
 
@@ -255,9 +256,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="HSBC"
-                android:fontFamily="@font/latoregular"
                 android:textColor="@color/textColor"
                 android:textSize="18sp" />
 
@@ -273,10 +274,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="NEWGEN"
                 android:textColor="@color/textColor"
-                android:fontFamily="@font/latoregular"
                 android:textSize="18sp" />
 
             <View
@@ -291,10 +292,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="WINGIFY"
                 android:textColor="@color/textColor"
-                android:fontFamily="@font/latoregular"
                 android:textSize="18sp" />
 
             <View
@@ -309,10 +310,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="POLESTAR"
                 android:textColor="@color/textColor"
-                android:fontFamily="@font/latoregular"
                 android:textSize="18sp" />
 
             <View
@@ -324,9 +325,9 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
-                android:fontFamily="@font/latoregular"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="DAFFODIL"
                 android:textColor="@color/textColor"
@@ -342,9 +343,9 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
-                android:fontFamily="@font/latoregular"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="RTDS"
                 android:textColor="@color/textColor"

@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/text_margin"
-            android:fontFamily="@string/regular"
+            android:fontFamily="@font/regular"
             android:text="Data Structutre using C"
             android:textColor="@color/textColor"
             android:textSize="15sp" />
