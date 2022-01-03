@@ -88,10 +88,11 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="36dp"
-                        android:fontFamily="@font/bold"
+                        android:fontFamily="@font/regular"
+                        android:textStyle="bold"
                         android:gravity="center_horizontal"
                         android:text="Computer Science"
-                        android:textColor="@color/black"
+                        android:textColor="@color/textColor"
                         android:textSize="20sp" />
 
                     <ImageView
@@ -157,10 +158,11 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="36dp"
-                        android:fontFamily="@font/bold"
+                        android:fontFamily="@font/regular"
+                        android:textStyle="bold"
                         android:gravity="center_horizontal"
                         android:text="Information Technology"
-                        android:textColor="@color/black"
+                        android:textColor="@color/textColor"
                         android:textSize="20sp" />
 
                     <ImageView
@@ -225,10 +227,11 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="36dp"
-                        android:fontFamily="@font/bold"
+                        android:fontFamily="@font/regular"
+                        android:textStyle="bold"
                         android:gravity="center_horizontal"
                         android:text="ECE"
-                        android:textColor="@color/black"
+                        android:textColor="@color/textColor"
                         android:textSize="20sp" />
 
                     <ImageView
@@ -293,10 +296,11 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="36dp"
-                        android:fontFamily="@font/bold"
+                        android:fontFamily="@font/regular"
+                        android:textStyle="bold"
                         android:gravity="center_horizontal"
                         android:text="EEE"
-                        android:textColor="@color/black"
+                        android:textColor="@color/textColor"
                         android:textSize="20sp" />
 
                     <ImageView
@@ -361,10 +365,11 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="36dp"
-                        android:fontFamily="@font/bold"
+                        android:fontFamily="@font/regular"
+                        android:textStyle="bold"
                         android:gravity="center"
                         android:text="Applied Science"
-                        android:textColor="@color/black"
+                        android:textColor="@color/textColor"
                         android:textSize="20sp" />
 
                     <ImageView

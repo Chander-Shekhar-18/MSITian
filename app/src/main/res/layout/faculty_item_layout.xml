@@ -40,29 +40,31 @@
                     android:id="@+id/teacherName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@string/regular"
+                    android:fontFamily="@font/regular"
                     android:text="Vinita Rohhila"
                     android:textColor="@color/textColor"
-                    android:textSize="@dimen/title_size" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/teacherPost"
                     android:layout_width="wrap_content"
-                    android:fontFamily="@string/regular"
                     android:layout_height="wrap_content"
-                    android:text="Lecturer"
                     android:layout_marginTop="3dp"
-                    android:textSize="16sp" />
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/regular"
+                    android:text="Lecturer"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/teacherEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@string/regular"
-                    android:maxLines="2"
                     android:layout_marginTop="3dp"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/regular"
+                    android:maxLines="2"
                     android:text="VinitaRohhila@gmail.com"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 

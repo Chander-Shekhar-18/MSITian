@@ -46,10 +46,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/bold"
+                android:fontFamily="@font/regular"
                 android:text="@string/maharaja_surajmal_institute_of_technology"
                 android:textColor="@color/textColor"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
@@ -78,7 +79,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="2.5dp"
                     android:fontFamily="@string/light"
-                    android:text="Green College Campus"
+                    android:text="@string/green_college_campus"
                     android:textColor="@color/textColor"
                     android:textSize="16sp" />
 
@@ -101,7 +102,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="2.5dp"
                     android:fontFamily="@string/light"
-                    android:text="Neat and Clean Classrooms"
+                    android:text="@string/neat_and_clean_classrooms"
                     android:textColor="@color/textColor"
                     android:textSize="16sp" />
 
@@ -124,7 +125,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="2.5dp"
                     android:fontFamily="@string/light"
-                    android:text="Library"
+                    android:text="@string/playground"
                     android:textColor="@color/textColor"
                     android:textSize="16sp" />
 
@@ -147,7 +148,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="2.5dp"
                     android:fontFamily="@string/light"
-                    android:text="Labs and Workshops"
+                    android:text="@string/library"
                     android:textColor="@color/textColor"
                     android:textSize="16sp" />
 
@@ -170,7 +171,30 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="2.5dp"
                     android:fontFamily="@string/light"
-                    android:text="Cafeteria"
+                    android:text="@string/labs_and_workshops"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_label" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="2.5dp"
+                    android:fontFamily="@string/light"
+                    android:text="@string/cafeteria"
                     android:textColor="@color/textColor"
                     android:textSize="16sp" />
 
@@ -192,10 +216,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/bold"
+                        android:fontFamily="@font/regular"
                         android:text="Departments"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/title_size2" />
+                        android:textSize="@dimen/title_size2"
+                        android:textStyle="bold" />
 
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
@@ -291,10 +316,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/bold"
+                android:fontFamily="@font/regular"
                 android:text="About Courses"
                 android:textColor="@color/textColor"
-                android:textSize="@dimen/title_size2" />
+                android:textSize="@dimen/title_size2"
+                android:textStyle="bold" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -303,11 +329,11 @@
                 <androidx.viewpager.widget.ViewPager
                     android:id="@+id/viewPager"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
+                    android:layout_height="320dp"
                     android:layout_marginHorizontal="4dp"
                     android:layout_marginTop="22dp"
-                    android:layout_toEndOf="@+id/btnSwipeLeft"
                     android:layout_toStartOf="@+id/btnSwipeRight"
+                    android:layout_toEndOf="@+id/btnSwipeLeft"
                     android:clipToPadding="false"
                     android:foregroundGravity="center"
                     android:overScrollMode="never" />
@@ -335,28 +361,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/bold"
-                android:text="Contact Details"
+                android:fontFamily="@font/regular"
+                android:text="@string/contact_details"
                 android:textColor="@color/textColor"
-                android:textSize="@dimen/title_size2" />
+                android:textSize="@dimen/title_size2"
+                android:textStyle="bold" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:fontFamily="@string/light"
-                android:text="Address: \n C-4 Janak Puri, New Delhi-110058"
-                android:textColor="@color/textColor"
-                android:textSize="@dimen/text_size" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:fontFamily="@string/light"
-                android:text="Phone No: \n 011-45037193"
+                android:text="@string/address_n_c_4_janak_puri_new_delhi_110058"
                 android:textColor="@color/textColor"
                 android:textSize="@dimen/text_size" />
 
@@ -367,7 +383,18 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:fontFamily="@string/light"
-                android:text="Email: \n director@msit.in"
+                android:text="@string/phone_no_n_011_45037193"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@string/light"
+                android:text="@string/email_n_director_msit_in"
                 android:textColor="@color/textColor"
                 android:textSize="@dimen/text_size" />
 

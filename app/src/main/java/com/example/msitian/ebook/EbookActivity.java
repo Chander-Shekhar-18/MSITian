@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.example.msitian.R;
 import com.facebook.shimmer.ShimmerFrameLayout;
+import com.github.ybq.android.spinkit.SpinKitView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -33,10 +34,9 @@ public class EbookActivity extends AppCompatActivity {
     private DatabaseReference reference;
     private List<EbookData> list;
     private EbookAdapter adapter;
-    ShimmerFrameLayout shimmerFrameLayout;
-    LinearLayout shimmerLayout;
     ImageView btnBack;
     private EditText editTextSearch;
+    SpinKitView spinKitView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +45,7 @@ public class EbookActivity extends AppCompatActivity {
 
         editTextSearch = findViewById(R.id.searchTextPdf);
 
-        shimmerLayout = findViewById(R.id.shimmerLayout);
-        shimmerFrameLayout = findViewById(R.id.shimmer_view_container);
+        spinKitView = findViewById(R.id.waveEbook);
         btnBack = findViewById(R.id.btnBack);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -75,9 +74,9 @@ public class EbookActivity extends AppCompatActivity {
                 recyclerView.setLayoutManager(new LinearLayoutManager(EbookActivity.this));
                 adapter = new EbookAdapter(EbookActivity.this, list);
                 recyclerView.setAdapter(adapter);
-                shimmerFrameLayout.stopShimmer();
-                shimmerLayout.setVisibility(View.GONE);
+                spinKitView.setVisibility(View.GONE);
                 editTextSearch.setVisibility(View.VISIBLE);
+                recyclerView.setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -105,23 +104,12 @@ public class EbookActivity extends AppCompatActivity {
 
     private void filter(String text) {
         ArrayList<EbookData> filterList = new ArrayList<>();
-        for(EbookData ebookData: list){
-            if (ebookData.getPdfTitle().toLowerCase().contains(editTextSearch.getText().toString().toLowerCase())){
+        for (EbookData ebookData : list) {
+            if (ebookData.getPdfTitle().toLowerCase().contains(editTextSearch.getText().toString().toLowerCase())) {
                 filterList.add(ebookData);
             }
         }
         adapter.FilerList(filterList);
     }
 
-    @Override
-    protected void onPause() {
-        shimmerFrameLayout.stopShimmer();
-        super.onPause();
-    }
-
-    @Override
-    protected void onResume() {
-        shimmerFrameLayout.startShimmer();
-        super.onResume();
-    }
 }

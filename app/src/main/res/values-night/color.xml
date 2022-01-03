@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="toolbar_color">#00796B</color>
-
-    <color name="search_bar_color">#FFFFFFFF</color>
-
+    <color name="search_bar_color">#525252</color>
     <color name="splash_screen_color">#7DC5FD</color>
+    <color name="textColor">#fff</color>
 </resources>

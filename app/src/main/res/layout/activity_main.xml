@@ -33,10 +33,10 @@
             android:id="@+id/bottamNavigation"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            app:itemIconTint="@color/toolbar_color"
-            app:itemTextColor="@color/toolbar_color"
             android:layout_alignParentBottom="true"
-            android:background="?android:attr/windowBackground"
+            android:background="@color/toolbar_color"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
             app:labelVisibilityMode="selected"
             app:menu="@menu/bottam_navigation" />
 

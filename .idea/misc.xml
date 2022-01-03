@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/background_box.xml" value="0.2484375" />
+        <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/background_box_mobile_number.xml" value="0.2484375" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/bottom_rounded.xml" value="0.2484375" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/ic_down.xml" value="0.2484375" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/ic_download.xml" value="0.2484375" />
@@ -11,7 +12,9 @@
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/ic_ece.xml" value="0.2484375" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/ic_label.xml" value="0.2484375" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/ic_left_arrow.xml" value="0.2484375" />
+        <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/ic_pdf.xml" value="0.2484375" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/ic_right_arrow.xml" value="0.2484375" />
+        <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/ic_search.xml" value="0.2484375" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/ic_up.xml" value="0.2484375" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/ic_video.xml" value="0.2484375" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/drawable/pdf_search_bar_background.xml" value="0.2484375" />
@@ -28,6 +31,7 @@
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/activity_placement.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/activity_recruiter.xml" value="0.21822916666666667" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/activity_verify_otp.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/activity_website.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/branch_item_layout.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/drawer_header.xml" value="0.23229166666666667" />
@@ -35,7 +39,7 @@
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/extra.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/faculty_item_layout.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/fragment_about.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/fragment_faculty.xml" value="0.38748913987836664" />
+        <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/fragment_faculty.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/fragment_gallery.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/fragment_home.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Chander Shekhar/AndroidStudioProjects/MSITian/app/src/main/res/layout/fragment_notice.xml" value="0.25" />

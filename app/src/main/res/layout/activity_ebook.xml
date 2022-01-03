@@ -21,8 +21,8 @@
         android:importantForAutofill="no"
         android:inputType="textFilter"
         android:padding="8dp"
+        android:textColorHint="@color/textColor"
         android:textSize="16sp"
-        android:textColorHint="@color/black"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/pdfToolbar"
@@ -55,8 +55,8 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="10dp"
                 android:layout_toEndOf="@+id/btnBack"
-                android:text="E Books"
                 android:fontFamily="@font/regular"
+                android:text="E Books"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -71,79 +71,23 @@
         android:layout_marginLeft="3dp"
         android:layout_marginTop="3dp"
         android:layout_marginRight="3dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchTextPdf"
         tools:listitem="@layout/ebook_item_layout" />
 
-    <com.facebook.shimmer.ShimmerFrameLayout
-        android:id="@+id/shimmer_view_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:background="@color/white"
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/waveEbook"
+        style="@style/SpinKitView.Small.CubeGrid"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/toolbar_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pdfToolbar">
-
-        <LinearLayout
-            android:id="@+id/shimmerLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-        </LinearLayout>
-
-    </com.facebook.shimmer.ShimmerFrameLayout>
-
+        app:layout_constraintTop_toTopOf="@id/pdfToolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

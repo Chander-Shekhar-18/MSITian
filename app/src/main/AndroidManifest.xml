@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MSITian">
         <activity
+            android:name=".otp.VerifyOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".otp.MobileNumberActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
@@ -43,9 +49,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -30,17 +30,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:fontFamily="@font/bold"
-                    android:text="Notice"
-                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/notice"
+                    android:textColor="@color/textColor"
                     android:textSize="18sp" />
 
                 <LinearLayout
@@ -51,9 +49,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
                         android:fontFamily="@font/thin"
-                        android:text="Date : "
+                        android:text="@string/date"
                         android:textColor="@color/textColor"
                         android:textSize="@dimen/text_size01" />
 
@@ -62,7 +60,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/thin"
-                        android:text="12-10-2000"
+                        android:text="@string/_12_10_2000"
                         android:textColor="@color/textColor"
                         android:textSize="@dimen/text_size01" />
 
@@ -70,7 +68,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/thin"
-                        android:text="Time : "
+                        android:text="@string/time"
+                        android:layout_marginStart="3dp"
                         android:textColor="@color/textColor"
                         android:textSize="@dimen/text_size01" />
 
@@ -79,7 +78,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/thin"
-                        android:text="13:12"
+                        android:text="@string/_13_12"
                         android:textColor="@color/textColor"
                         android:textSize="@dimen/text_size01" />
 
@@ -95,14 +94,14 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/text_margin"
             android:fontFamily="@font/regular"
-            android:text="Title"
-            android:textColor="@color/black"
+            android:text="@string/title"
+            android:textColor="@color/textColor"
             android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/noticeImage"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="500dp"
             android:src="@drawable/msit"
             android:scaleType="fitXY" />
 
