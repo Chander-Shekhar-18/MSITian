@@ -20,11 +20,11 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_marginTop="100dp"
-                android:src="@drawable/otprecieved" />
+                android:src="@drawable/msit" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/regular"
                 android:text="@string/otp_verification"
-                android:textColor="@color/black"
+                android:textColor="@color/textColor"
                 android:textSize="25sp" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -44,7 +44,7 @@
                 android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="@string/please_enter_the_otp_sent_to_you"
-                android:textColor="@color/black"
+                android:textColor="@color/textColor"
                 android:textSize="14sp" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -52,12 +52,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="50dp"
                 android:fontFamily="@font/regular"
                 android:gravity="center"
                 android:text="@string/_7217653341"
-                android:textColor="@color/black"
+                android:textColor="@color/textColor"
                 android:textSize="14sp" />
 
             <LinearLayout
@@ -78,7 +78,7 @@
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColor"
                     android:textSize="24sp"
                     tools:ignore="LabelFor" />
 
@@ -95,7 +95,7 @@
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColor"
                     android:textSize="24sp"
                     tools:ignore="LabelFor" />
 
@@ -112,7 +112,7 @@
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColor"
                     android:textSize="24sp"
                     tools:ignore="LabelFor" />
 
@@ -129,7 +129,7 @@
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColor"
                     android:textSize="24sp"
                     tools:ignore="LabelFor" />
 
@@ -146,7 +146,7 @@
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColor"
                     android:textSize="24sp"
                     tools:ignore="LabelFor" />
 
@@ -163,7 +163,7 @@
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:maxLength="1"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColor"
                     android:textSize="24sp"
                     tools:ignore="LabelFor" />
 
@@ -179,6 +179,7 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
                     android:fontFamily="@font/regular"
                     android:text="@string/didn_t_recieve_the_otp"
                     android:textSize="12sp" />
@@ -189,26 +190,27 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/regular"
                     android:text="@string/resend_otp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColor"
                     android:textSize="15sp" />
 
             </LinearLayout>
+
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ProgressBar
+                    android:id="@+id/progressBarRecieveOtp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/progressBarRecieveOtp"
                     android:layout_gravity="center"
-                    android:visibility="gone"
-                    />
+                    android:visibility="gone" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnVerifyOtp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
                     android:layout_margin="30dp"
                     android:backgroundTint="@color/toolbar_color"
                     android:fontFamily="@font/regular"

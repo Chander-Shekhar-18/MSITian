@@ -28,6 +28,7 @@ import com.example.msitian.recruiter.RecruiterActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -90,8 +91,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.navigation_recruiter:
                 startActivity(new Intent(this, RecruiterActivity.class));
                 break;
+            case R.id.navigation_logOut:
+                logout();
+                break;
         }
         return false;
+    }
+
+    private void logout() {
+        FirebaseAuth.getInstance().signOut();
+        finish();
+        Toast.makeText(MainActivity.this, "Log Out Successfully", Toast.LENGTH_SHORT).show();
     }
 
     private void gotoUrl(String s) {

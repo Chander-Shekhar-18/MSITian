@@ -358,7 +358,15 @@
                 android:layout_marginRight="12dp"
                 android:background="@color/gray" />
 
-
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:text="And Many More ..."
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>
 
