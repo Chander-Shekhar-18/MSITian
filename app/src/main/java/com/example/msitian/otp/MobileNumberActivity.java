@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.msitian.MainActivity;
 import com.example.msitian.R;
+import com.github.ybq.android.spinkit.SpinKitView;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -25,7 +26,7 @@ public class MobileNumberActivity extends AppCompatActivity {
 
     EditText mobileNumber;
     Button btnGetOtp;
-    ProgressBar progressBar;
+    SpinKitView progressBar;
     private FirebaseAuth firebaseAuth;
 
     @Override

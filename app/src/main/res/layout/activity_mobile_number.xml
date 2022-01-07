@@ -94,12 +94,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ProgressBar
+            <com.github.ybq.android.spinkit.SpinKitView
                 android:id="@+id/progressBarSendingOtp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/SpinKitView.Small.Wave"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:visibility="gone" />
+                android:visibility="gone"
+                app:SpinKit_Color="@color/toolbar_color"
+                app:layout_constraintTop_toTopOf="@id/pdfToolbar" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnGetOtp"

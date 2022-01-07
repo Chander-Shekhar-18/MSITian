@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.msitian.MainActivity;
 import com.example.msitian.R;
+import com.github.ybq.android.spinkit.SpinKitView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;
@@ -30,7 +31,7 @@ public class VerifyOtpActivity extends AppCompatActivity {
 
     EditText inputNumber1, inputNumber2, inputNumber3, inputNumber4, inputNumber5, inputNumber6;
     Button btnVerifyOtp;
-    ProgressBar progressBar;
+    SpinKitView progressBar;
     String getBackendOtp;
     TextView resendOtp;
 

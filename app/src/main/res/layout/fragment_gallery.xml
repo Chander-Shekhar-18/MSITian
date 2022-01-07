@@ -6,9 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".Ui.GalleryFragment">
 
-    <ScrollView
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/gallerySpinKitView"
+        style="@style/SpinKitView.Small.CubeGrid"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/toolbar_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/galleryScrollView"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -16,121 +31,151 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="@dimen/text_margin">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
-                android:layout_marginVertical="8dp">
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:id="@+id/campusCardView"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent">
 
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="@dimen/text_margin"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="36dp"
                         android:fontFamily="@font/regular"
-                        android:text="Convocation"
+                        android:gravity="center_horizontal"
+                        android:text="Campus"
                         android:textColor="@color/textColor"
-                        android:textSize="@dimen/title_size2"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginVertical="4dp"
-                        android:background="@color/gray" />
+                    <ImageView
+                        android:id="@+id/btnImageDownCollege"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ic_down" />
 
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/convoRec"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-
-                </LinearLayout>
+                </RelativeLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/campusRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
-                android:layout_marginVertical="8dp">
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="8dp"
+                android:id="@+id/seminarCardView"
+                app:cardElevation="8dp">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent">
 
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="@dimen/text_margin"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="36dp"
                         android:fontFamily="@font/regular"
-                        android:text="Independence Day"
+                        android:gravity="center_horizontal"
+                        android:text="Seminar"
                         android:textColor="@color/textColor"
-                        android:textSize="@dimen/title_size2"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginVertical="4dp"
-                        android:background="@color/gray" />
+                    <ImageView
+                        android:id="@+id/btnImageDownSeminar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ic_down" />
 
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/independenceRec"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-
-                </LinearLayout>
+                </RelativeLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/seminarRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
-                android:layout_marginVertical="8dp">
+                android:layout_height="40dp"
+                android:id="@+id/eventsCardView"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent">
 
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="@dimen/text_margin"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="36dp"
                         android:fontFamily="@font/regular"
-                        android:text="Other Events"
+                        android:gravity="center_horizontal"
+                        android:text="Events"
                         android:textColor="@color/textColor"
-                        android:textSize="@dimen/title_size2"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginVertical="4dp"
-                        android:background="@color/gray" />
+                    <ImageView
+                        android:id="@+id/btnImageDownEvents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ic_down" />
 
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/otherRec"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-
-                </LinearLayout>
+                </RelativeLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/eventsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
 
         </LinearLayout>
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

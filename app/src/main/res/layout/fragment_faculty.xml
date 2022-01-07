@@ -6,61 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".Ui.FacultyFragment">
 
-    <com.facebook.shimmer.ShimmerFrameLayout
-        android:id="@+id/shimmer_view_container_faculty"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:visibility="visible"
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/facultySpinKitView"
+        style="@style/SpinKitView.Small.CubeGrid"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/toolbar_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:id="@+id/shimmerLayoutFaculty"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-        </LinearLayout>
-
-    </com.facebook.shimmer.ShimmerFrameLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="16dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,6 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
+                android:id="@+id/csCardView"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
@@ -89,11 +53,11 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="36dp"
                         android:fontFamily="@font/regular"
-                        android:textStyle="bold"
                         android:gravity="center_horizontal"
                         android:text="Computer Science"
                         android:textColor="@color/textColor"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:id="@+id/btnImageDownCS"
@@ -106,19 +70,6 @@
                         android:layout_marginEnd="5dp"
                         android:layout_marginBottom="5dp"
                         android:src="@drawable/ic_down" />
-
-                    <ImageView
-                        android:id="@+id/btnImageUPCS"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:src="@drawable/ic_up"
-                        android:visibility="gone" />
 
                 </RelativeLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -145,6 +96,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:id="@+id/itCardView"
                 android:layout_margin="4dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
@@ -159,11 +111,11 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="36dp"
                         android:fontFamily="@font/regular"
-                        android:textStyle="bold"
                         android:gravity="center_horizontal"
                         android:text="Information Technology"
                         android:textColor="@color/textColor"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:id="@+id/btnImageDownIT"
@@ -176,19 +128,6 @@
                         android:layout_marginEnd="5dp"
                         android:layout_marginBottom="5dp"
                         android:src="@drawable/ic_down" />
-
-                    <ImageView
-                        android:id="@+id/btnImageUPIT"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:src="@drawable/ic_up"
-                        android:visibility="gone" />
                 </RelativeLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -213,6 +152,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
+                android:id="@+id/eceCardView"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
                 app:cardCornerRadius="8dp"
@@ -228,11 +168,11 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="36dp"
                         android:fontFamily="@font/regular"
-                        android:textStyle="bold"
                         android:gravity="center_horizontal"
                         android:text="ECE"
                         android:textColor="@color/textColor"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:id="@+id/btnImageDownECE"
@@ -245,19 +185,6 @@
                         android:layout_marginEnd="5dp"
                         android:layout_marginBottom="5dp"
                         android:src="@drawable/ic_down" />
-
-                    <ImageView
-                        android:id="@+id/btnImageUPECE"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:src="@drawable/ic_up"
-                        android:visibility="gone" />
                 </RelativeLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -283,6 +210,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:id="@+id/eeeCardView"
                 android:layout_margin="4dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
@@ -297,11 +225,11 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="36dp"
                         android:fontFamily="@font/regular"
-                        android:textStyle="bold"
                         android:gravity="center_horizontal"
                         android:text="EEE"
                         android:textColor="@color/textColor"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:id="@+id/btnImageDownEEE"
@@ -314,19 +242,6 @@
                         android:layout_marginEnd="5dp"
                         android:layout_marginBottom="5dp"
                         android:src="@drawable/ic_down" />
-
-                    <ImageView
-                        android:id="@+id/btnImageUPEEE"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:src="@drawable/ic_up"
-                        android:visibility="gone" />
                 </RelativeLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -353,6 +268,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_margin="4dp"
+                android:id="@+id/appliedScienceCardView"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
@@ -366,11 +282,11 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="36dp"
                         android:fontFamily="@font/regular"
-                        android:textStyle="bold"
                         android:gravity="center"
                         android:text="Applied Science"
                         android:textColor="@color/textColor"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:id="@+id/btnImageDownAppliedScience"
@@ -383,19 +299,6 @@
                         android:layout_marginEnd="5dp"
                         android:layout_marginBottom="5dp"
                         android:src="@drawable/ic_down" />
-
-                    <ImageView
-                        android:id="@+id/btnImageUPAppliedScience"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:src="@drawable/ic_up"
-                        android:visibility="gone" />
                 </RelativeLayout>
             </com.google.android.material.card.MaterialCardView>
 

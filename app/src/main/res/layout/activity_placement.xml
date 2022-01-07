@@ -49,6 +49,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="3dp"
         android:layout_marginLeft="3dp"
+        android:visibility="gone"
         android:layout_marginRight="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,73 +57,16 @@
         app:layout_constraintTop_toBottomOf="@+id/placementToolbar"
         tools:listitem="@layout/ebook_item_layout" />
 
-    <com.facebook.shimmer.ShimmerFrameLayout
-        android:id="@+id/shimmer_view_container_placement"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/placementSpinKit"
+        style="@style/SpinKitView.Small.CubeGrid"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/toolbar_color"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/placementToolbar">
-
-        <LinearLayout
-            android:id="@+id/shimmerLayoutPlacement"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-
-            <include layout="@layout/shimmer_effect" />
-        </LinearLayout>
-
-    </com.facebook.shimmer.ShimmerFrameLayout>
-
+        app:layout_constraintTop_toTopOf="@id/placementToolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.msitian.R;
 import com.facebook.shimmer.ShimmerFrameLayout;
+import com.github.ybq.android.spinkit.SpinKitView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,8 +29,7 @@ public class PlacementActivity extends AppCompatActivity {
     private DatabaseReference reference;
     private List<PlacementData> list;
     private PlacementAdapter adapter;
-    ShimmerFrameLayout shimmerFrameLayout;
-    LinearLayout shimmerLayout;
+    SpinKitView spinKitView;
     ImageView btnBack;
 
 
@@ -40,8 +40,7 @@ public class PlacementActivity extends AppCompatActivity {
 
         btnBack = findViewById(R.id.btnBackPlacement);
         recyclerView = findViewById(R.id.placementRecyclerView);
-        shimmerFrameLayout = findViewById(R.id.shimmer_view_container_placement);
-        shimmerLayout = findViewById(R.id.shimmerLayoutPlacement);
+        spinKitView = findViewById(R.id.placementSpinKit);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,8 +67,8 @@ public class PlacementActivity extends AppCompatActivity {
                 recyclerView.setLayoutManager(new LinearLayoutManager(PlacementActivity.this));
                 adapter = new PlacementAdapter(PlacementActivity.this, list);
                 recyclerView.setAdapter(adapter);
-                shimmerFrameLayout.stopShimmer();
-                shimmerLayout.setVisibility(View.GONE);
+                spinKitView.setVisibility(View.GONE);
+                recyclerView.setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -77,17 +76,5 @@ public class PlacementActivity extends AppCompatActivity {
                 Toast.makeText(PlacementActivity.this, "Some Error Occurred", Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    @Override
-    protected void onPause() {
-        shimmerFrameLayout.stopShimmer();
-        super.onPause();
-    }
-
-    @Override
-    protected void onResume() {
-        shimmerFrameLayout.startShimmer();
-        super.onResume();
     }
 }

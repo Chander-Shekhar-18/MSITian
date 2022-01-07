@@ -21,6 +21,8 @@ import com.example.msitian.R;
 import com.example.msitian.adapters.TeacherAdapter;
 import com.example.msitian.adapters.TeacherData;
 import com.facebook.shimmer.ShimmerFrameLayout;
+import com.github.ybq.android.spinkit.SpinKitView;
+import com.google.android.material.card.MaterialCardView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -36,11 +38,11 @@ public class FacultyFragment extends Fragment {
     private LinearLayout csNoData, itNoData, eceNoData, eeeNoData, appliedScienceNoData;
     private List<TeacherData> csList, itList, eceList, eeeList, appliedScienceList;
     private TeacherAdapter adapter;
-    private ShimmerFrameLayout shimmerFrameLayout;
-    LinearLayout shimmerLayout;
     NestedScrollView nestedScrollView;
     private DatabaseReference reference, dbRef;
-    ImageView btnUpcs, btnDowncs, btnUpIt, btnDownIt, btnUpEce, btnDownEce, btnUpEee, btnDownEee, btnUpAppliedScience, btnDownAppliedScience;
+    SpinKitView spinKitView;
+    MaterialCardView csCard, itCard, eceCard, eeeCard, asCard;
+    private Boolean isOpenRec = true;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,8 +51,7 @@ public class FacultyFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_faculty, container, false);
 
         nestedScrollView = view.findViewById(R.id.nestedScrollView);
-        shimmerFrameLayout = view.findViewById(R.id.shimmer_view_container_faculty);
-        shimmerLayout = view.findViewById(R.id.shimmerLayoutFaculty);
+        spinKitView = view.findViewById(R.id.facultySpinKitView);
         csDepartment = view.findViewById(R.id.csDepartment);
         itDepartment = view.findViewById(R.id.itDepartment);
         eceDepartment = view.findViewById(R.id.eceDepartment);
@@ -61,105 +62,71 @@ public class FacultyFragment extends Fragment {
         eceNoData = view.findViewById(R.id.eceNodata);
         eeeNoData = view.findViewById(R.id.eeeNodata);
         appliedScienceNoData = view.findViewById(R.id.appliedScienceNodata);
-        btnUpcs = view.findViewById(R.id.btnImageUPCS);
-        btnDowncs = view.findViewById(R.id.btnImageDownCS);
-        btnUpIt = view.findViewById(R.id.btnImageUPIT);
-        btnDownIt = view.findViewById(R.id.btnImageDownIT);
-        btnUpEce = view.findViewById(R.id.btnImageUPECE);
-        btnDownEce = view.findViewById(R.id.btnImageDownECE);
-        btnUpEee = view.findViewById(R.id.btnImageUPEEE);
-        btnDownEee = view.findViewById(R.id.btnImageDownEEE);
-        btnUpAppliedScience = view.findViewById(R.id.btnImageUPAppliedScience);
-        btnDownAppliedScience = view.findViewById(R.id.btnImageDownAppliedScience);
+        csCard = view.findViewById(R.id.csCardView);
+        itCard = view.findViewById(R.id.itCardView);
+        eceCard = view.findViewById(R.id.eceCardView);
+        eeeCard = view.findViewById(R.id.eeeCardView);
+        asCard = view.findViewById(R.id.appliedScienceCardView);
 
 
-        btnDowncs.setOnClickListener(new View.OnClickListener() {
+        csCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                csDepartment.setVisibility(View.VISIBLE);
-                btnDowncs.setVisibility(View.GONE);
-                btnUpcs.setVisibility(View.VISIBLE);
+                if (isOpenRec) {
+                    csDepartment.setVisibility(View.VISIBLE);
+                    isOpenRec = false;
+                } else {
+                    csDepartment.setVisibility(View.GONE);
+                    isOpenRec = true;
+                }
             }
         });
-
-        btnUpcs.setOnClickListener(new View.OnClickListener() {
+        itCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                csDepartment.setVisibility(View.GONE);
-                btnDowncs.setVisibility(View.VISIBLE);
-                btnUpcs.setVisibility(View.GONE);
+                if (isOpenRec) {
+                    itDepartment.setVisibility(View.VISIBLE);
+                    isOpenRec = false;
+                } else {
+                    itDepartment.setVisibility(View.GONE);
+                    isOpenRec = true;
+                }
             }
         });
-
-        btnDownIt.setOnClickListener(new View.OnClickListener() {
+        eceCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                itDepartment.setVisibility(View.VISIBLE);
-                btnDownIt.setVisibility(View.GONE);
-                btnUpIt.setVisibility(View.VISIBLE);
+                if (isOpenRec) {
+                    eceDepartment.setVisibility(View.VISIBLE);
+                    isOpenRec = false;
+                } else {
+                    eceDepartment.setVisibility(View.GONE);
+                    isOpenRec = true;
+                }
             }
         });
-
-        btnUpIt.setOnClickListener(new View.OnClickListener() {
+        eeeCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                itDepartment.setVisibility(View.GONE);
-                btnDownIt.setVisibility(View.VISIBLE);
-                btnUpIt.setVisibility(View.GONE);
+                if (isOpenRec) {
+                    eeeDepartment.setVisibility(View.VISIBLE);
+                    isOpenRec = false;
+                } else {
+                    eeeDepartment.setVisibility(View.GONE);
+                    isOpenRec = true;
+                }
             }
         });
-
-        btnDownEce.setOnClickListener(new View.OnClickListener() {
+        asCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                eceDepartment.setVisibility(View.VISIBLE);
-                btnDownEce.setVisibility(View.GONE);
-                btnUpEce.setVisibility(View.VISIBLE);
-            }
-        });
-
-        btnUpEce.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                eceDepartment.setVisibility(View.GONE);
-                btnDownEce.setVisibility(View.VISIBLE);
-                btnUpEce.setVisibility(View.GONE);
-            }
-        });
-
-        btnDownEee.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                eeeDepartment.setVisibility(View.VISIBLE);
-                btnDownEee.setVisibility(View.GONE);
-                btnUpEee.setVisibility(View.VISIBLE);
-            }
-        });
-
-        btnUpEee.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                eeeDepartment.setVisibility(View.GONE);
-                btnDownEee.setVisibility(View.VISIBLE);
-                btnUpEee.setVisibility(View.GONE);
-            }
-        });
-
-        btnDownAppliedScience.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                appliedScienceDepartment.setVisibility(View.VISIBLE);
-                btnDownAppliedScience.setVisibility(View.GONE);
-                btnUpAppliedScience.setVisibility(View.VISIBLE);
-            }
-        });
-
-        btnUpAppliedScience.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                appliedScienceDepartment.setVisibility(View.GONE);
-                btnDownAppliedScience.setVisibility(View.VISIBLE);
-                btnUpAppliedScience.setVisibility(View.GONE);
+                if (isOpenRec) {
+                    appliedScienceDepartment.setVisibility(View.VISIBLE);
+                    isOpenRec = false;
+                } else {
+                    appliedScienceDepartment.setVisibility(View.GONE);
+                    isOpenRec = true;
+                }
             }
         });
 
@@ -198,8 +165,7 @@ public class FacultyFragment extends Fragment {
                     appliedScienceDepartment.setLayoutManager(new LinearLayoutManager(getContext()));
                     adapter = new TeacherAdapter(appliedScienceList, getContext());
                     appliedScienceDepartment.setAdapter(adapter);
-                    shimmerFrameLayout.stopShimmer();
-                    shimmerLayout.setVisibility(View.GONE);
+                    spinKitView.setVisibility(View.GONE);
                     nestedScrollView.setVisibility(View.VISIBLE);
                 }
             }
@@ -231,8 +197,7 @@ public class FacultyFragment extends Fragment {
                     eeeDepartment.setLayoutManager(new LinearLayoutManager(getContext()));
                     adapter = new TeacherAdapter(eeeList, getContext());
                     eeeDepartment.setAdapter(adapter);
-                    shimmerFrameLayout.stopShimmer();
-                    shimmerLayout.setVisibility(View.GONE);
+                    spinKitView.setVisibility(View.GONE);
                     nestedScrollView.setVisibility(View.VISIBLE);
                 }
             }
@@ -264,8 +229,7 @@ public class FacultyFragment extends Fragment {
                     eceDepartment.setLayoutManager(new LinearLayoutManager(getContext()));
                     adapter = new TeacherAdapter(eceList, getContext());
                     eceDepartment.setAdapter(adapter);
-                    shimmerFrameLayout.stopShimmer();
-                    shimmerLayout.setVisibility(View.GONE);
+                    spinKitView.setVisibility(View.GONE);
                     nestedScrollView.setVisibility(View.VISIBLE);
                 }
             }
@@ -297,8 +261,7 @@ public class FacultyFragment extends Fragment {
                     itDepartment.setLayoutManager(new LinearLayoutManager(getContext()));
                     adapter = new TeacherAdapter(itList, getContext());
                     itDepartment.setAdapter(adapter);
-                    shimmerFrameLayout.stopShimmer();
-                    shimmerLayout.setVisibility(View.GONE);
+                    spinKitView.setVisibility(View.GONE);
                     nestedScrollView.setVisibility(View.VISIBLE);
                 }
             }
@@ -330,8 +293,7 @@ public class FacultyFragment extends Fragment {
                     csDepartment.setLayoutManager(new LinearLayoutManager(getContext()));
                     adapter = new TeacherAdapter(csList, getContext());
                     csDepartment.setAdapter(adapter);
-                    shimmerFrameLayout.stopShimmer();
-                    shimmerLayout.setVisibility(View.GONE);
+                    spinKitView.setVisibility(View.GONE);
                     nestedScrollView.setVisibility(View.VISIBLE);
                 }
             }
@@ -341,17 +303,5 @@ public class FacultyFragment extends Fragment {
                 Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    @Override
-    public void onPause() {
-        shimmerFrameLayout.stopShimmer();
-        super.onPause();
-    }
-
-    @Override
-    public void onResume() {
-        shimmerFrameLayout.startShimmer();
-        super.onResume();
     }
 }
