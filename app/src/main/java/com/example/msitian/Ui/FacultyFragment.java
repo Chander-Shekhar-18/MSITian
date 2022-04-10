@@ -20,7 +20,6 @@ import android.widget.Toast;
 import com.example.msitian.R;
 import com.example.msitian.adapters.TeacherAdapter;
 import com.example.msitian.adapters.TeacherData;
-import com.facebook.shimmer.ShimmerFrameLayout;
 import com.github.ybq.android.spinkit.SpinKitView;
 import com.google.android.material.card.MaterialCardView;
 import com.google.firebase.database.DataSnapshot;

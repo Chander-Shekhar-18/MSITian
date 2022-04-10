@@ -53,6 +53,7 @@ public class NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.noticeView
             if (currentItem.getImage() != null)
                 Picasso.get()
                         .load(currentItem.getImage())
+                        .placeholder(R.drawable.please_wait)
                         .into(holder.noticeImage);
         } catch (Exception e) {
             e.printStackTrace();

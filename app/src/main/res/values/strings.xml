@@ -29,11 +29,10 @@
     <string name="_7217653341">123456789</string>
     <string name="_91">+91</string>
     <string name="enter_mobile_number">Enter Your Mobile Number</string>
-    <string name="sent_otp">We will send you OTP on this number</string>
+    <string name="sent_otp">We will send you an OTP on this number</string>
     <string name="otp_verification">OTP Verification</string>
     <string name="please_enter_the_otp_sent_to_you">Please enter the code that was sent to</string>
     <string name="didn_t_recieve_the_otp">Didn\'t recieve the OTP ?</string>
-    <string name="resend_otp">Resend OTP</string>
     <string name="time">Time :</string>
     <string name="_12_10_2000">12-10-2000</string>
     <string name="date">Date :</string>

@@ -39,7 +39,7 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.GalleryV
     public void onBindViewHolder(@NonNull GalleryViewAdapter holder, @SuppressLint("RecyclerView") final int position) {
         Picasso.get()
                 .load(images.get(position))
-                .placeholder(R.drawable.msit)
+                .placeholder(R.drawable.please_wait)
                 .into(holder.imageView);
 
         holder.imageView.setOnClickListener(new View.OnClickListener() {

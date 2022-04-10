@@ -47,7 +47,7 @@ public class TeacherAdapter extends RecyclerView.Adapter<TeacherAdapter.teacherV
         try {
             Picasso.get()
                     .load(item.getImage())
-                    .placeholder(R.drawable.msit)
+                    .placeholder(R.drawable.please_wait)
                     .into(holder.imageView);
         } catch (Exception e) {
             e.printStackTrace();

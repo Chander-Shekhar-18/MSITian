@@ -7,7 +7,6 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.facebook.shimmer.ShimmerFrameLayout;
 
 public class WebsiteActivity extends AppCompatActivity {
 
