@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(new Intent(this, PlacementActivity.class));
                 break;
             case R.id.navigation_rate:
-                Toast.makeText(MainActivity.this, "Rate Fragment", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Implemented Soon", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.navigation_developer:
                 gotoUrl("https://www.linkedin.com/in/chander-shekhar-721b301a4/");
