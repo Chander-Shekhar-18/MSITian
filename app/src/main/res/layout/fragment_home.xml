@@ -325,102 +325,35 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
+                android:gravity="center"
                 android:layout_height="wrap_content">
 
-                <androidx.viewpager2.widget.ViewPager2
+                <androidx.viewpager.widget.ViewPager
                     android:id="@+id/viewPager"
                     android:layout_width="match_parent"
                     android:layout_height="353dp"
                     android:layout_marginHorizontal="4dp"
-                    android:layout_marginTop="22dp"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="22dp"
                     android:layout_marginRight="5dp"
-                    android:layout_toStartOf="@+id/btnSwipeRight"
-                    android:layout_toEndOf="@+id/btnSwipeLeft"
+                    android:clipToPadding="false"
                     android:foregroundGravity="center"
-                    android:overScrollMode="never"
-                    />
+                    android:overScrollMode="never" />
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                    android:id="@+id/dotsIndicators"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="4dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/viewPager"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
-                        android:layout_margin="6dp"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="0dp">
-
-                        <ImageView
-                            android:id="@+id/iv1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@color/toolbar_color" />
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
-                        android:layout_margin="6dp"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="0dp">
-
-                        <ImageView
-                            android:id="@+id/iv2"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@color/toolbar_color" />
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
-                        android:layout_margin="6dp"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="0dp">
-
-                        <ImageView
-                            android:id="@+id/iv3"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@color/toolbar_color" />
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
-                        android:layout_margin="6dp"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="0dp">
-
-                        <ImageView
-                            android:id="@+id/iv4"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@color/toolbar_color" />
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
-                        android:layout_margin="6dp"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="0dp">
-
-                        <ImageView
-                            android:id="@+id/iv5"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@color/toolbar_color" />
-                    </com.google.android.material.card.MaterialCardView>
-
-
-                </LinearLayout>
+                    android:layout_centerHorizontal="true"
+                    app:dotsColor="@color/toolbar_color"
+                    app:dotsCornerRadius="8dp"
+                    app:dotsSize="14dp"
+                    app:dotsSpacing="4dp"
+                    app:dotsWidthFactor="2.5"
+                    app:progressMode="true"
+                    app:selectedDotColor="@color/textColor" />
 
             </RelativeLayout>
 

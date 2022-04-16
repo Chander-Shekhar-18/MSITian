@@ -73,5 +73,5 @@ dependencies {
 
     implementation 'com.mindorks.android:prdownloader:0.6.0'
     implementation 'com.karumi:dexter:6.2.3'
-
+    implementation 'com.tbuonomo:dotsindicator:4.2'
 }

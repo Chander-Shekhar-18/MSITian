@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
@@ -24,6 +25,7 @@ import com.example.msitian.adapters.ViewPagerAdapter;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
+import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,8 +33,10 @@ import java.util.List;
 
 public class HomeFragment extends Fragment {
 
-    private ImageView iv1, iv2, iv3, iv4, iv5;
-    private ViewPager2 viewPager;
+    private ViewPager viewPager;
+    private BranchAdapter adapter;
+    private List<BranchModel> list;
+    private WormDotsIndicator indicators;
 
     SliderView sliderView;
     int[] images = {msitmain,
@@ -47,42 +51,20 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         viewPager = view.findViewById(R.id.viewPager);
-        iv1 = view.findViewById(R.id.iv1);
-        iv2 = view.findViewById(R.id.iv2);
-        iv3 = view.findViewById(R.id.iv3);
-        iv4 = view.findViewById(R.id.iv4);
-        iv5 = view.findViewById(R.id.iv5);
+        indicators = view.findViewById(R.id.dotsIndicators);
 
-        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                changeColor();
-                super.onPageScrolled(position, positionOffset, positionOffsetPixels);
-            }
 
-            @Override
-            public void onPageSelected(int position) {
-                super.onPageSelected(position);
-            }
 
-            @Override
-            public void onPageScrollStateChanged(int state) {
-                super.onPageScrollStateChanged(state);
-                changeColor();
-            }
-        });
-
-        ArrayList<BranchModel> list = new ArrayList<>();
+        list = new ArrayList<>();
         list.add(new BranchModel("CSE", "The Computer Science and Engineering Department was established in the year 2000 with the vision to offer Bachelor of Engineering degree in Computer Science & Engineering and impart world class education to the students. A group of well qualified, experienced and highly motivated faculty is engaged in providing quality education to the future computer engineer and keeping them abreast of the fast technological development."));
         list.add(new BranchModel("IT", "Information Technology is most prominent and rapidly developing field in today's world. To maintain speed with latest trends in Information Technology industry, our Information Technology department is fully empowered. Our fully air-conditioned laboratories contain sufficient number of computer systems with latest hardware and software configuration. A very high speed internet connection is there in the labs."));
         list.add(new BranchModel("ECE", "The Department of Electronics & Communication Engineering which has a fine blend of experienced as well as young and dynamic personalities as faculty, is involved in providing quality education at Undergraduate (UG) level. They have an unceasing commitment towards students, helping them learn, grow, and develop and achieve their goals, whether it is becoming a professor, an entrepreneur, or joining industry."));
         list.add(new BranchModel("EEE", "The Department of Electrical & Electronics Engineering has a fine blend of experienced as well as young and dynamic personalities as faculty, is involved in providing quality education at Undergraduate (UG) level. They have an unceasing commitment towards students, helping them learn, grow, and develop and achieve their goals, whether it is becoming a professor, an entrepreneur, or joining industry."));
         list.add(new BranchModel("Applied Science", "The Department of Applied Sciences in Maharaja Surajmal Institute of Technology comprises of Physics, Chemistry, Workshop and Mathematics departments. All the departments are having well equipped spacious laboratories with pleasant working environment. All the labs have ultra new apparatus and equipments to expose the students to new trends in the field of technology and science. "));
 
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(list);
-        viewPager.setAdapter(viewPagerAdapter);
-
-
+        adapter = new BranchAdapter(getContext(),list);
+        viewPager.setAdapter(adapter);
+        indicators.setViewPager(viewPager);
         ImageView imageMap = view.findViewById(R.id.msitLocation);
         imageMap.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,48 +81,6 @@ public class HomeFragment extends Fragment {
         sliderView.startAutoCycle();
 
         return view;
-    }
-
-    private void changeColor() {
-        switch (viewPager.getCurrentItem()) {
-            case 0:
-                iv1.setImageResource(R.drawable.circle_indicatore);
-                iv2.setImageResource(R.drawable.indicatore);
-                iv3.setImageResource(R.drawable.indicatore);
-                iv4.setImageResource(R.drawable.indicatore);
-                iv5.setImageResource(R.drawable.indicatore);
-                break;
-            case 1:
-                iv1.setImageResource(R.drawable.indicatore);
-                iv2.setImageResource(R.drawable.circle_indicatore);
-                iv3.setImageResource(R.drawable.indicatore);
-                iv4.setImageResource(R.drawable.indicatore);
-                iv5.setImageResource(R.drawable.indicatore);
-                break;
-            case 2:
-                iv1.setImageResource(R.drawable.indicatore);
-                iv2.setImageResource(R.drawable.indicatore);
-                iv3.setImageResource(R.drawable.circle_indicatore);
-                iv4.setImageResource(R.drawable.indicatore);
-                iv5.setImageResource(R.drawable.indicatore);
-                break;
-            case 3:
-                iv1.setImageResource(R.drawable.indicatore);
-                iv2.setImageResource(R.drawable.indicatore);
-                iv3.setImageResource(R.drawable.indicatore);
-                iv4.setImageResource(R.drawable.circle_indicatore);
-                iv5.setImageResource(R.drawable.indicatore);
-                break;
-            case 4:
-                iv1.setImageResource(R.drawable.indicatore);
-                iv2.setImageResource(R.drawable.indicatore);
-                iv3.setImageResource(R.drawable.indicatore);
-                iv4.setImageResource(R.drawable.indicatore);
-                iv5.setImageResource(R.drawable.circle_indicatore);
-                break;
-
-            default:
-        }
     }
 
     private void openMap() {
