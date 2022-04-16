@@ -1,48 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp"
-    app:cardCornerRadius="8dp"
-    app:strokeColor="@color/gray"
-    app:strokeWidth="1dp">
+    android:layout_margin="5dp">
 
-    <RelativeLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="18dp"
+        app:cardCornerRadius="16dp">
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/txtViewBranchName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="12dp"
-            android:fontFamily="@font/bold"
-            android:text="CSE"
-            android:textColor="@color/textColor"
-            android:textSize="@dimen/title_size2" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/txtViewBranchDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtViewBranchName"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@string/light"
-            android:text="@string/about_college"
-            android:textColor="@color/textColor"
-            android:textSize="@dimen/text_size" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtViewBranchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/bold"
+                android:text="CSE"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtViewBranchDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewBranchName"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@string/light"
+                android:text="@string/about_college"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size" />
 
 
-    </RelativeLayout>
+        </RelativeLayout>
 
-</com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

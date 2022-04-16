@@ -6,19 +6,13 @@ import android.Manifest;
 import android.app.DownloadManager;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
-import android.webkit.URLUtil;
 import android.widget.Toast;
 
-import com.downloader.Error;
-import com.downloader.OnCancelListener;
-import com.downloader.OnDownloadListener;
-import com.downloader.OnPauseListener;
-import com.downloader.OnProgressListener;
-import com.downloader.OnStartOrResumeListener;
 import com.downloader.PRDownloader;
 import com.downloader.Progress;
 import com.github.chrisbanes.photoview.PhotoView;
@@ -46,6 +40,8 @@ public class FullImageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_image);
+
+        PRDownloader.initialize(getApplicationContext());
 
         imageUrl = getIntent().getStringExtra("image");
         imageView = findViewById(R.id.fullImageView);
@@ -82,10 +78,14 @@ public class FullImageActivity extends AppCompatActivity {
     }
 
     private void downloadImage() {
+
         ProgressDialog pd = new ProgressDialog(this);
         pd.setMessage("Downloading ...");
+        pd.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        pd.setIndeterminate(true);
         pd.setCancelable(false);
         pd.show();
+
         try{
             SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy_HHmmss", Locale.getDefault());
             String filename = sdf.format(new Date());
@@ -106,17 +106,19 @@ public class FullImageActivity extends AppCompatActivity {
             Toast.makeText(this, "Image download failed.", Toast.LENGTH_SHORT).show();
             pd.dismiss();
         }
+
+
 //        ProgressDialog pd = new ProgressDialog(this);
 //        pd.setMessage("Downloading ...");
 //        pd.setCancelable(false);
 //        pd.show();
 //
-//        File file = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+//        File file = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
 //
 //        SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy_HHmmss", Locale.getDefault());
 //        String filename = sdf.format(new Date());
 //
-//        PRDownloader.download(imageUrl, file.getPath(), filename+".jpg")
+//        PRDownloader.download(imageUrl, file.getPath(), filename + ".jpg")
 //                .build()
 //                .setOnStartOrResumeListener(new OnStartOrResumeListener() {
 //                    @Override
