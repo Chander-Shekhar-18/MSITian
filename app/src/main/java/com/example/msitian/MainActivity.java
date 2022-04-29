@@ -24,6 +24,7 @@ import android.widget.Toast;
 import com.example.msitian.ebook.EbookActivity;
 import com.example.msitian.ebook.PlacementActivity;
 import com.example.msitian.fees.FeeStructure;
+import com.example.msitian.news.NewsActivity;
 import com.example.msitian.recruiter.RecruiterActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -94,6 +95,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.navigation_logOut:
                 logout();
                 break;
+            case R.id.navigation_news:
+                startActivity(new Intent(this, NewsActivity.class));
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + item.getItemId());
         }
         return false;
     }

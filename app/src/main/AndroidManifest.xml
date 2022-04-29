@@ -9,11 +9,17 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:requestLegacyExternalStorage="true"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MSITian">
+        <activity
+            android:name=".news.DetailNewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".news.NewsActivity"
+            android:exported="false" />
         <activity
             android:name=".otp.VerifyOtpActivity"
             android:exported="false" />
