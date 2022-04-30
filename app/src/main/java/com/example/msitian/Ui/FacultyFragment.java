@@ -42,6 +42,7 @@ public class FacultyFragment extends Fragment {
     SpinKitView spinKitView;
     MaterialCardView csCard, itCard, eceCard, eeeCard, asCard;
     private Boolean isOpenRec = true;
+    ImageView imgIndicatorCSE, imgIndicatorIT, imgIndicatorECE, imgIndicatorEEE, imgIndicatorAS;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -67,15 +68,23 @@ public class FacultyFragment extends Fragment {
         eeeCard = view.findViewById(R.id.eeeCardView);
         asCard = view.findViewById(R.id.appliedScienceCardView);
 
+        imgIndicatorCSE = view.findViewById(R.id.imgIndicatorCSE);
+        imgIndicatorIT = view.findViewById(R.id.imgIndicatorIT);
+        imgIndicatorECE = view.findViewById(R.id.imgIndicatorECE);
+        imgIndicatorEEE = view.findViewById(R.id.imgIndicatorEEE);
+        imgIndicatorAS = view.findViewById(R.id.imgIndicatorAppliedScience);
+
 
         csCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (isOpenRec) {
                     csDepartment.setVisibility(View.VISIBLE);
+                    imgIndicatorCSE.setImageResource(R.drawable.ic_up);
                     isOpenRec = false;
                 } else {
                     csDepartment.setVisibility(View.GONE);
+                    imgIndicatorCSE.setImageResource(R.drawable.ic_down);
                     isOpenRec = true;
                 }
             }
@@ -85,9 +94,11 @@ public class FacultyFragment extends Fragment {
             public void onClick(View view) {
                 if (isOpenRec) {
                     itDepartment.setVisibility(View.VISIBLE);
+                    imgIndicatorIT.setImageResource(R.drawable.ic_up);
                     isOpenRec = false;
                 } else {
                     itDepartment.setVisibility(View.GONE);
+                    imgIndicatorIT.setImageResource(R.drawable.ic_down);
                     isOpenRec = true;
                 }
             }
@@ -97,9 +108,11 @@ public class FacultyFragment extends Fragment {
             public void onClick(View view) {
                 if (isOpenRec) {
                     eceDepartment.setVisibility(View.VISIBLE);
+                    imgIndicatorECE.setImageResource(R.drawable.ic_up);
                     isOpenRec = false;
                 } else {
                     eceDepartment.setVisibility(View.GONE);
+                    imgIndicatorECE.setImageResource(R.drawable.ic_down);
                     isOpenRec = true;
                 }
             }
@@ -109,9 +122,11 @@ public class FacultyFragment extends Fragment {
             public void onClick(View view) {
                 if (isOpenRec) {
                     eeeDepartment.setVisibility(View.VISIBLE);
+                    imgIndicatorEEE.setImageResource(R.drawable.ic_up);
                     isOpenRec = false;
                 } else {
                     eeeDepartment.setVisibility(View.GONE);
+                    imgIndicatorEEE.setImageResource(R.drawable.ic_down);
                     isOpenRec = true;
                 }
             }
@@ -121,9 +136,11 @@ public class FacultyFragment extends Fragment {
             public void onClick(View view) {
                 if (isOpenRec) {
                     appliedScienceDepartment.setVisibility(View.VISIBLE);
+                    imgIndicatorAS.setImageResource(R.drawable.ic_up);
                     isOpenRec = false;
                 } else {
                     appliedScienceDepartment.setVisibility(View.GONE);
+                    imgIndicatorAS.setImageResource(R.drawable.ic_down);
                     isOpenRec = true;
                 }
             }

@@ -60,7 +60,7 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/btnImageDownCS"
+                        android:id="@+id/imgIndicatorCSE"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -118,7 +118,7 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/btnImageDownIT"
+                        android:id="@+id/imgIndicatorIT"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -175,7 +175,7 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/btnImageDownECE"
+                        android:id="@+id/imgIndicatorECE"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -232,7 +232,7 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/btnImageDownEEE"
+                        android:id="@+id/imgIndicatorEEE"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -289,7 +289,7 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/btnImageDownAppliedScience"
+                        android:id="@+id/imgIndicatorAppliedScience"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"

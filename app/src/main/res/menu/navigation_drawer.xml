@@ -29,13 +29,9 @@
 
     <item
         android:id="@+id/navigation_news"
-        android:icon="@drawable/ic_fee"
+        android:icon="@drawable/news"
         android:title="News" />
 
-    <item
-        android:id="@+id/navigation_rate"
-        android:icon="@drawable/ic_rate"
-        android:title="Rate Us" />
 
     <item
         android:id="@+id/navigation_developer"

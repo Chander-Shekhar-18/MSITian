@@ -53,12 +53,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:textColor="@color/toolbar_color"
+                        android:fontFamily="@font/regular"
                         android:textSize="16sp" />
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/textViewDetailTime"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
                         android:layout_marginTop="6dp"
                         android:textColor="@color/toolbar_color"
                         android:textSize="16sp" />
@@ -70,7 +72,8 @@
                 android:id="@+id/textViewDetailText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/regular"
                 android:textColor="@color/textColor"
                 android:textSize="22sp" />
 
@@ -78,7 +81,8 @@
                 android:id="@+id/txtViewDetailContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:fontFamily="@font/regular"
+                android:layout_margin="8dp"
                 android:textColor="@color/textColor"
                 android:textSize="20sp" />
 

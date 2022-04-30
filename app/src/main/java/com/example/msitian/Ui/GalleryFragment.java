@@ -36,6 +36,7 @@ public class GalleryFragment extends Fragment {
     SpinKitView spinKitView;
     MaterialCardView campusCard, seminarCard, eventsCard;
     private Boolean isOpenRec = true;
+    ImageView imgIndicatorCampus, imgIndicatorSeminar, imgIndicatorEvents;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -50,15 +51,20 @@ public class GalleryFragment extends Fragment {
         campusCard = view.findViewById(R.id.campusCardView);
         seminarCard = view.findViewById(R.id.seminarCardView);
         eventsCard = view.findViewById(R.id.eventsCardView);
+        imgIndicatorCampus = view.findViewById(R.id.imgIndicatorCampus);
+        imgIndicatorSeminar = view.findViewById(R.id.imgIndicatorSeminar);
+        imgIndicatorEvents = view.findViewById(R.id.imgIndicatorEvents);
 
         campusCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (isOpenRec){
                     campusRecView.setVisibility(View.VISIBLE);
+                    imgIndicatorCampus.setImageResource(R.drawable.ic_up);
                     isOpenRec = false;
                 }else {
                     campusRecView.setVisibility(View.GONE);
+                    imgIndicatorCampus.setImageResource(R.drawable.ic_down);
                     isOpenRec = true;
                 }
             }
@@ -68,9 +74,11 @@ public class GalleryFragment extends Fragment {
             public void onClick(View view) {
                 if (isOpenRec){
                     seminarRecView.setVisibility(View.VISIBLE);
+                    imgIndicatorSeminar.setImageResource(R.drawable.ic_up);
                     isOpenRec = false;
                 }else {
                     seminarRecView.setVisibility(View.GONE);
+                    imgIndicatorSeminar.setImageResource(R.drawable.ic_down);
                     isOpenRec = true;
                 }
             }
@@ -80,9 +88,11 @@ public class GalleryFragment extends Fragment {
             public void onClick(View view) {
                 if (isOpenRec){
                     eventsRecView.setVisibility(View.VISIBLE);
+                    imgIndicatorEvents.setImageResource(R.drawable.ic_up);
                     isOpenRec = false;
                 }else {
                     eventsRecView.setVisibility(View.GONE);
+                    imgIndicatorEvents.setImageResource(R.drawable.ic_down);
                     isOpenRec = true;
                 }
             }
