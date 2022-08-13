@@ -30,6 +30,7 @@
 <img src="https://github.com/Chander-Shekhar-18/MSITian/blob/master/images/Screenshot_2022-08-13-14-01-49-950_com.oliver.msitian.jpg" width ="250px" height ="500px">
 
 ### E-Books Screen
+* Students can read e-books online and can download also
 <img src="https://github.com/Chander-Shekhar-18/MSITian/blob/master/images/Screenshot_2022-08-13-14-02-04-908_com.oliver.msitian.jpg" width ="250px" height ="500px">
 
 ### Fees Screen
@@ -42,5 +43,6 @@
 <img src="https://github.com/Chander-Shekhar-18/MSITian/blob/master/images/Screenshot_2022-08-13-14-02-13-790_com.oliver.msitian.jpg" width ="250px" height ="500px">
 
 ### News Screen
+* Students can read different news by clicking on different chips
 <img src="https://github.com/Chander-Shekhar-18/MSITian/blob/master/images/Screenshot_2022-08-13-14-02-32-056_com.oliver.msitian.jpg" width ="250px" height ="500px">
 
