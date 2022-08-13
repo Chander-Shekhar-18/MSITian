@@ -16,6 +16,7 @@
 <img src="https://github.com/Chander-Shekhar-18/MSITian/blob/master/images/Screenshot_2022-08-13-14-01-13-666_com.oliver.msitian.jpg" width ="250px" height ="500px">
 
 ### College Address
+* You will navigate to google maps after clicking this image of college address
 <img src="https://github.com/Chander-Shekhar-18/MSITian/blob/master/images/Screenshot_2022-08-13-14-01-19-780_com.oliver.msitian.jpg" width ="250px" height ="500px">
 
 ### Notice Screen
