@@ -41,6 +41,5 @@
 <img src="https://github.com/Chander-Shekhar-18/MSITian/blob/master/images/Screenshot_2022-08-13-14-02-13-790_com.oliver.msitian.jpg" width ="250px" height ="500px">
 
 ### News Screen
-<img src="https://github.com/Chander-Shekhar-18/MSITian/blob/master/images/Screenshot_2022-08-13-14-02-13-790_com.oliver.msitian.jpg" width ="250px" height ="500px">
 <img src="https://github.com/Chander-Shekhar-18/MSITian/blob/master/images/Screenshot_2022-08-13-14-02-32-056_com.oliver.msitian.jpg" width ="250px" height ="500px">
 
