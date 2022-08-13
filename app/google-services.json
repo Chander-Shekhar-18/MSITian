@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:491504445106:android:30014216c0116bb5710bab",
+        "mobilesdk_app_id": "1:491504445106:android:d41215f4154f9394710bab",
         "android_client_info": {
-          "package_name": "com.example.msit_admin"
+          "package_name": "com.msit.msit_admin"
         }
       },
       "oauth_client": [
@@ -37,12 +37,20 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:491504445106:android:302b2f1c910ba518710bab",
+        "mobilesdk_app_id": "1:491504445106:android:88227e56e39a571c710bab",
         "android_client_info": {
-          "package_name": "com.example.msitian"
+          "package_name": "com.oliver.msitian"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "491504445106-0unt1a8hdnjfjpgou57g2p2lu73tfnir.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.oliver.msitian",
+            "certificate_hash": "f14bf19434dab4cdfad873d3b2ebef86854c8849"
+          }
+        },
         {
           "client_id": "491504445106-2dgfgc1bmenqjscm2rpk1j0eadpc9131.apps.googleusercontent.com",
           "client_type": 3
