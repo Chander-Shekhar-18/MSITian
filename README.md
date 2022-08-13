@@ -10,7 +10,7 @@
 ##Screenshots 
 
 ###Splash Screen
-<img src="https://github.com/Chander-Shekhar-18/MSITian/blob/master/images/Screenshot_2022-08-13-14-01-03-165_com.oliver.msitian.jpg" width ="250px" height ="450px">
+<img src="https://github.com/Chander-Shekhar-18/MSITian/blob/master/images/Screenshot_2022-08-13-14-01-03-165_com.oliver.msitian.jpg" width ="250px" height ="500px">
 
 ###Home Screen
 <img src="https://github.com/Chander-Shekhar-18/MSITian/blob/master/images/Screenshot_2022-08-13-14-01-13-666_com.oliver.msitian.jpg" width ="250px" height ="450px">
